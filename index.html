@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国家统一法律资格考试成绩查询</title>
+
+    <style>
+        body {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            background: whitesmoke;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #3083C7;
+            font-weight: 600;
+        }
+
+        table {
+            font-size: 14px;
+            border: 1px solid #534040;
+            padding: 30px;
+            background: white;
+        }
+
+        button {
+            padding: 7px 13px;
+            background: linear-gradient(0deg, #0d5ba6, #146db4);
+            color: white;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        input {
+            border-radius: 3px;
+            padding: 7px 10px;
+            background: none repeat scroll 0 0 transparent;
+            border: 1px solid gray;
+        }
+
+        .a {
+            color: red;
+        }
+
+        .text {
+            font-weight: 600;
+            color: #534040;
+            font-size: 17px;
+        }
+    </style>
+    <script>
+        function login() {
+            alert("登入中，请稍等...");
+
+            setTimeout(function() {
+                window.location.href = 'main.html';
+            }, 5000);
+        }
+    </script>
+</head>
+<body>
+<div class="title">国家统一法律职业资格考试成绩查询</div>
+
+<table>
+    <tr>
+        <td class="text"><span class="a">*</span>身份证号码:</td>
+        <td><input type="text" placeholder="请输入身份证号码"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="text"><span class="a">*</span>登录密码:</td>
+        <td><input type="password" placeholder="请输入登录密码"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="text">验证码:</td>
+        <td>
+            <input type=text" placeholder="请输入验证码">
+
+        </td>
+        <td>
+            <img src="validateCode.jpg" style="border: 1px solid grey;">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center;">
+            <button onclick="login()">点击查询</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
